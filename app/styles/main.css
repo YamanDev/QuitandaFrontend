@@ -19,7 +19,6 @@ body {
 
 /* Custom page header */
 .header {
-  border-bottom: 1px solid #e5e5e5;
   margin-bottom: 10px;
 }
 /* Make the masthead heading the same height as the navigation */
@@ -81,4 +80,12 @@ body {
   .jumbotron {
     border-bottom: 0;
   }
+}
+
+.coluna {
+  width: 300px;
+}
+
+.negrito {
+  font-weight: bold;
 }

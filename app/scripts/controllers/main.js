@@ -8,28 +8,11 @@
  * Controller of the quitandaApp
  */
 angular.module('quitandaApp')
-  .controller('MainCtrl', function ($location, $scope) {
-
-    //$location.path("/produtos");
+  .controller('MainCtrl', function ($location, $scope, main_service) {
 
     $scope.valores_produtos_grafico = [55, 100, 75];
 
     $scope.produtos_grafico = ["Frutas", "Legumes", "Verduras"];
-
-    var opcoes_grafico = {
-      title: {
-        display: true,
-        text: 'Estoque de Alimentos',
-        position: 'top'
-      },
-      scales: {
-        yAxes: [{
-          ticks: {
-            beginAtZero: true
-          }
-        }]
-      }
-    }
 
     var ctx_grafico = $("#grafico-estoque").get(0).getContext("2d");
     var chart_grafico = new Chart(ctx_grafico, {

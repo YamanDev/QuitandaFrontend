@@ -29,10 +29,11 @@
           </div>
 
           <div class="collapse navbar-collapse" id="js-navbar-collapse">
-
             <ul class="nav navbar-nav">
               <li class="active"><a href="#/">Home</a></li>
               <li><a ng-href="#!/produtos">Produtos</a></li>
+              <li><a>Vendas</a></li>
+              <li><a>Estoque</a></li>
             </ul>
           </div>
         </div>
@@ -45,7 +46,7 @@
 
     <div class="footer">
       <div class="container">
-        <p style = "margin-left: 50%; font-weight: bold;">Yaman - 2017</p>
+        <p style = "margin-left: 45%; font-weight: bold;">Yaman - 2017</p>
       </div>
     </div>
 
@@ -80,8 +81,16 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/produtos_controller.js"></script>
+
+        <script src="scripts/config/value/configValue.js" defer></script>
+        <script src="scripts/config/interceptor/yamanInterceptor.js" defer></script>
+        <script src="scripts/config/interceptor/configInterceptor.js" defer></script>
+
+        <script src="scripts/controllers/main.js" defer></script>
+        <script src="scripts/services/main_service.js" defer></script>
+
+        <script src="scripts/controllers/produtos_controller.js" defer></script>
+        <script src="scripts/services/produtos_service.js" defer></script>
         <!-- endbuild -->
 </body>
 </html>

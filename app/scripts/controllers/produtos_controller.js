@@ -4,17 +4,18 @@
  * @ngdoc function
  * @name quitandaApp.controller:AboutCtrl
  * @description
- * # AboutCtrl
- * Controller of the quitandaApp
+ * Controller da pagina de produtos
  */
 angular.module('quitandaApp')
-  .controller('produtos_controller', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('produtos_controller', function ($scope, produtos_service) {
 
-    
+    $scope.carregando = true;
+    produtos_service.dados_tabela()
+      .then(function (data) {
+        $scope.carregando = false;
+        $scope.lista_dados_tabela = data;
+      }, function (reason) {
+        console.log(reason);
+      })
 
   });
