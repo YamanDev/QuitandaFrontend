@@ -14,7 +14,30 @@ Você foi contratado pelo Barnabé, como consultor de desenvolvimento de sistema
 - Sistema confiável com o que mostra.
 - Sem lentidões.
 
-Na conversa de levantamento de requisitos com o Barnabé, obviamente você não obteve sucesso em levantar documentações técnicas e nem funcionais escritas pelo Crispin, pois o mesmo não deixou nada.
+Na conversa de levantamento de requisitos com o Barnabé, obviamente você não obteve sucesso em levantar documentações técnicas e nem funcionais escritas pelo Crispin, pois o mesmo não deixou nada. Por sorte, você encontrou no servidor um arquivo txt com as seguintes informações:
+
+# hints.txt
+NÃO ESQUECER
+Antes de começar a programar, preciso de:
+NodeJS, 
+Uma vez com o node instalado, preciso:
+npm install 
+npm install -g bower
+npm install -g grunt
+bower install
+
+Depois que tiver feito isto, preciso executar o grunt:
+grunt serve
+
+!!!IMPORTANTE!!!
+Estou usando como Frontend o AngularJS
+
+!!!TO DO!!!
+Já criei a camada de testes do projeto integrada com o Maven, porém preciso criar os teste unitários. No próximo módulo aprenderei isso.
+
+!!!NÃO ESQUEUCER!!!
+Preciso do maven para rodar o projeto. É springboot, não SpringBreak! 
+# EOF
 </cenario>
 
 ## Avaliação
