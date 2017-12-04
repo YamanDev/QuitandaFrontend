@@ -15,6 +15,7 @@ angular.module('quitandaApp')
         $scope.carregando = false;
         $scope.lista_dados_tabela = data;
       }, function (reason) {
+        $scope.carregando = false;
         console.log(reason);
       })
 
